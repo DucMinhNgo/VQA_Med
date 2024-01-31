@@ -310,7 +310,7 @@ def main():
     train_images_path = "/content/drive/MyDrive/VQA/ImageClef-2019-VQA-Med-Training/Train_images/"
 
     valid_path = "/content/drive/MyDrive/VQA/ImageClef-2019-VQA-Med-Validation/"
-    valid_images_path = "/content/drive/MyDrive/VQA/ImageClef-2019-VQA-Med-Validation/Val_images"
+    valid_images_path = "/content/drive/MyDrive/VQA/ImageClef-2019-VQA-Med-Validation/Val_images/"
 
     test_path = "/content/drive/MyDrive/VQA/VQAMed2019Test/"
     test_images_path = "/content/drive/MyDrive/VQA/VQAMed2019Test/VQAMed2019_Test_Images/"
