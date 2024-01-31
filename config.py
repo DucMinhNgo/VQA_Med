@@ -7,8 +7,9 @@ import json
 path = '/content'
 #****************************To be Change to reproduce ou result*********************************************
 
-# location of the data and where to store iamge feature image
-path_output_chd = path+'/VQA_Med'    
+# location of the data and where to store image feature image
+# path_output_chd = path+'/VQA_Med'    
+path_output_chd = "/content/drive/MyDrive/VQA/VQA_Med" 
 
 input_vqa_train = 'train_dataset_pickle/train_dataset_df.pkl'
 input_vqa_valid ='valid_dataset_pickle/valid_dataset_df.pkl'
