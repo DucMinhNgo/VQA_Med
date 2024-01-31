@@ -296,14 +296,24 @@ def main():
  
     
     #set path for the dataset
-    train_path = path_change+'/VQA_Med_2019_Dataset/Train/ImageClef-2019-VQA-Med-Training/'#QAPairsByCategory/'
-    train_images_path = path_change+'/VQA_Med_2019_Dataset/Train/ImageClef-2019-VQA-Med-Training/Train_images/'
+    # train_path = path_change+'/VQA_Med_2019_Dataset/Train/ImageClef-2019-VQA-Med-Training/'#QAPairsByCategory/'
+    # train_images_path = path_change+'/VQA_Med_2019_Dataset/Train/ImageClef-2019-VQA-Med-Training/Train_images/'
 
-    valid_path = path_change+'/VQA_Med_2019_Dataset/Valid/ImageClef-2019-VQA-Med-Validation/'#QAPairsByCategory/'
-    valid_images_path = path_change+'/VQA_Med_2019_Dataset/Valid/ImageClef-2019-VQA-Med-Validation/Val_images/'
+    # valid_path = path_change+'/VQA_Med_2019_Dataset/Valid/ImageClef-2019-VQA-Med-Validation/'#QAPairsByCategory/'
+    # valid_images_path = path_change+'/VQA_Med_2019_Dataset/Valid/ImageClef-2019-VQA-Med-Validation/Val_images/'
 
-    test_path = path_change+'/VQA_Med_2019_Dataset/Test/VQAMed2019Test/' 
-    test_images_path = path_change+'/VQA_Med_2019_Dataset/Test/VQAMed2019Test/VQAMed2019_Test_Images/'
+    # test_path = path_change+'/VQA_Med_2019_Dataset/Test/VQAMed2019Test/' 
+    # test_images_path = path_change+'/VQA_Med_2019_Dataset/Test/VQAMed2019Test/VQAMed2019_Test_Images/'
+
+    #set path for the dataset
+    train_path = "/content/drive/MyDrive/VQA/ImageClef-2019-VQA-Med-Training/"
+    train_images_path = "/content/drive/MyDrive/VQA/ImageClef-2019-VQA-Med-Training/Train_images/"
+
+    valid_path = "/content/drive/MyDrive/VQA/ImageClef-2019-VQA-Med-Validation/"
+    valid_images_path = "/content/drive/MyDrive/VQA/ImageClef-2019-VQA-Med-Validation/Val_images"
+
+    test_path = "/content/drive/MyDrive/VQA/VQAMed2019Test/"
+    test_images_path = "/content/drive/MyDrive/VQA/VQAMed2019Test/VQAMed2019_Test_Images/"
 
     size = opt.IMG_INPUT_SIZE
 

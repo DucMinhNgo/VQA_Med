@@ -4,7 +4,7 @@ import json
 
 #path on virtual machine 
 #****************************To be Change to reproduce ou result*********************************************
-path = '/home/smfogo'
+path = '/content'
 #****************************To be Change to reproduce ou result*********************************************
 
 # location of the data and where to store iamge feature image
