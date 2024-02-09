@@ -199,10 +199,30 @@ def train_model():
     print('Best val Top 1 Acc: {:4f}, Top 5 Acc: {:4f}'.format(best_acc1,best_acc5))
 
     #plot the loss and accuracy for train and valid
-    make_plot(history_loss, num_epochs, input_dir, type_plot='loss')
-    make_plot(history_acc1, num_epochs,input_dir, type_plot='acc1')
+    # make_plot(history_loss, num_epochs, input_dir, type_plot='loss')
+    # make_plot(history_acc1, num_epochs,input_dir, type_plot='acc1')
    
+    loss_data = {
+      history_loss: history_loss,
+      num_epochs: num_epochs,
+      input_dir: input_dir
+    }
+    loss_path = "loss.json"
 
+    # Open the file in write mode and write JSON data
+    with open(loss_path, "w") as json_file:
+        json.dump(loss_data, json_file)
+   
+    acc_data = {
+      history_acc1: history_acc1,
+      num_epochs: num_epochs,
+      input_dir: input_dir,
+    }
+    acc_path = "acc.json"
+
+    # Open the file in write mode and write JSON data
+    with open(acc_path, "w") as json_file:
+        json.dump(acc_data, json_file)
     # load best model weights
     model.load_state_dict(best_model_wts)
     model.load_state_dict(best_model_wts)
