@@ -202,27 +202,19 @@ def train_model():
     # make_plot(history_loss, num_epochs, input_dir, type_plot='loss')
     # make_plot(history_acc1, num_epochs,input_dir, type_plot='acc1')
    
-    loss_data = {
-      history_loss: history_loss,
-      num_epochs: num_epochs,
-      input_dir: input_dir
-    }
-    loss_path = "loss.json"
+    loss_data = str(history_loss)
+    acc_data = str(history_acc1)
 
-    # Open the file in write mode and write JSON data
-    with open(loss_path, "w") as json_file:
-        json.dump(loss_data, json_file)
-   
-    acc_data = {
-      history_acc1: history_acc1,
-      num_epochs: num_epochs,
-      input_dir: input_dir,
-    }
-    acc_path = "acc.json"
+    # Open a file in write mode
+    with open("loss_output.txt", "w") as file:
+        # Write the data to the file
+        file.write(loss_data)
 
-    # Open the file in write mode and write JSON data
-    with open(acc_path, "w") as json_file:
-        json.dump(acc_data, json_file)
+    # Open a file in write mode
+    with open("acc_output.txt", "w") as file:
+        # Write the data to the file
+        file.write(acc_data)
+
     # load best model weights
     model.load_state_dict(best_model_wts)
     model.load_state_dict(best_model_wts)

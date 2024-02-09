@@ -1,0 +1,1 @@
+{'train': [tensor(0.3919, device='cuda:0')], 'valid': [tensor(0.4560, device='cuda:0')]}
