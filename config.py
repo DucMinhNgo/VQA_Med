@@ -4,7 +4,8 @@ import json
 
 #path on virtual machine 
 #****************************To be Change to reproduce ou result*********************************************
-path = '/content'
+# path = '/content'
+path = '../'
 #****************************To be Change to reproduce ou result*********************************************
 
 # location of the data and where to store image feature image
